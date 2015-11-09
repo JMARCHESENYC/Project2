@@ -31,6 +31,21 @@ gem 'bootstrap-sass', '~> 3.3.5'
 
 gem 'jquery-turbolinks'
 
+gem 'devise'
+
+gem 'rails_12factor'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+group :development do
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 
 
 # Use ActiveModel has_secure_password

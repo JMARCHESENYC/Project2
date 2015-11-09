@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :caption
 
       t.timestamps null: false
+      add_index :users, :user_name, unique: true  
     end
   end
 end
